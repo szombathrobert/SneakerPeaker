@@ -89,7 +89,7 @@ export default function Navbar() {
                             </li>
                         ))}
                         <li className="mt-4">
-                            <button className="bg-blue-600 text-white px-8 py-2 rounded-md hover:bg-blue-500">
+                            <button className="bg-blue-600 text-white px-8 py-2 rounded-md hover:bg-blue-500 hover:cursor-pointer">
                                 Login
                             </button>
                         </li>
@@ -102,7 +102,7 @@ export default function Navbar() {
                         {navItems.map((item,index) => (
                             <li
                             key={index}
-                            className='flex items-center p-1 text-lg gap-x-2 text-slate-600 hover:text-blue-500'
+                            className='flex items-center p-1 text-lg gap-x-2 text-slate-600 hover:text-blue-500 hover:cursor-pointer'
                             >
                                 <Link href={item.href} className="flex items-center">
                                     {item.name}
@@ -110,7 +110,7 @@ export default function Navbar() {
                             </li>
                         ))}
                         <li>
-                            <button className="bg-blue-600 hover:bg-blue-500 text-white px-8 py-2 rounded-md">
+                            <button className="bg-blue-600 hover:bg-blue-500 text-white px-8 py-2 rounded-md hover:cursor-pointer">
                                 Login
                             </button>
                         </li>
